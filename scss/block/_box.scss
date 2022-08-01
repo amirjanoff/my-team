@@ -1,4 +1,64 @@
-.box {
-  width: 350px;
-  height: 253px;
+.container {
+  background-color: rgba(0, 64, 71, 1);
+  margin-bottom: 100px;
+
+  h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 64px;
+  }
+  .box {
+    padding: 35px 24px 28px;
+    background-color: rgba(1, 47, 52, 1);
+
+    .box-1 {
+      padding: 35px 24px 56px 24px;
+    }
+    img {
+      padding: 0 103px;
+      padding-bottom: 13px;
+    }
+    h3 {
+      color: rgba(121, 200, 199, 1);
+      font-size: 18px;
+      line-height: 28px;
+      text-align: center;
+      margin: 0;
+    }
+    p {
+      color: #fff;
+      font-size: 15px;
+      line-height: 25px;
+      text-align: center;
+      margin: 0;
+    }
+  }
+  .plus {
+    width: 56px;
+    height: 56px;
+    background-color: rgba(246, 126, 126, 1);
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: -30px;
+    transition: 0.3s ease;
+    img {
+      transition: 0.3s ease;
+    }
+  }
+}
+
+.plus:hover {
+  background-color: rgba(121, 200, 199, 1);
+  padding: 20px;
+
+  img {
+    transform: rotate(45deg);
+  }
+}
+.icon img {
+  padding: 0 !important;
+  margin-right: 16px;
+  padding-top: 24px !important;
 }
