@@ -17,8 +17,9 @@
       padding: 35px 24px 56px 24px;
     }
     img {
-      padding: 0 103px;
+      margin-left: 110px;
       padding-bottom: 13px;
+      
     }
     h3 {
       color: rgba(121, 200, 199, 1);
@@ -60,5 +61,6 @@
 .icon img {
   padding: 0 !important;
   margin-right: 16px;
+  margin-left: 0 !important;
   padding-top: 24px !important;
 }
