@@ -2,6 +2,9 @@
   background-color: rgb(0, 64, 71);
   margin-bottom: 100px;
 }
+.container .col-4 {
+  transition: 0.4s ease;
+}
 .container h1 {
   text-align: center;
   color: #fff;
@@ -12,13 +15,15 @@
 .container .box {
   padding: 35px 24px 28px;
   background-color: rgb(1, 47, 52);
+  transition: 0.3s ease;
 }
 .container .box .box-1 {
-  padding: 35px 24px 56px 24px;
+  padding: 0px 24px 28px 24px;
 }
 .container .box img {
   margin-left: 110px;
   padding-bottom: 13px;
+  transition: 0.3s ease;
 }
 .container .box h3 {
   color: rgb(121, 200, 199);
@@ -47,17 +52,38 @@
   transition: 0.3s ease;
 }
 
-.plus:hover {
+.col-4:hover .box {
+  background-color: rgb(0, 37, 41);
+}
+.col-4:hover .box img {
+  display: none;
+}
+.col-4:hover .box .primary {
+  display: none;
+}
+.col-4:hover .box .text,
+.col-4:hover .box .icon img {
+  display: inline-block;
+}
+.col-4:hover .plus {
   background-color: rgb(121, 200, 199);
   padding: 20px;
 }
-.plus:hover img {
+.col-4:hover .plus img {
   transform: rotate(45deg);
 }
 
+.icon {
+  margin-left: 15px;
+}
 .icon img {
   padding: 0 !important;
   margin-right: 16px;
   margin-left: 0 !important;
   padding-top: 24px !important;
+  display: none;
+}
+
+.text {
+  display: none;
 }/*# sourceMappingURL=main.css.map */

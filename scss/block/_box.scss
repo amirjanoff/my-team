@@ -2,6 +2,10 @@
   background-color: rgba(0, 64, 71, 1);
   margin-bottom: 100px;
 
+  .col-4 {
+    transition: 0.4s ease;
+  }
+
   h1 {
     text-align: center;
     color: #fff;
@@ -12,14 +16,15 @@
   .box {
     padding: 35px 24px 28px;
     background-color: rgba(1, 47, 52, 1);
+    transition: 0.3s ease;
 
     .box-1 {
-      padding: 35px 24px 56px 24px;
+      padding: 0px 24px 28px 24px;
     }
     img {
       margin-left: 110px;
       padding-bottom: 13px;
-      
+      transition: 0.3s ease;
     }
     h3 {
       color: rgba(121, 200, 199, 1);
@@ -49,18 +54,41 @@
     }
   }
 }
+.col-4:hover {
+  .box {
+    background-color: rgba(0, 37, 41, 1);
+    img {
+      display: none;
+    }
+    .primary {
+      display: none;
+    }
+    .text,
+    .icon img {
+      display: inline-block;
+    }
+  }
 
-.plus:hover {
-  background-color: rgba(121, 200, 199, 1);
-  padding: 20px;
+  .plus {
+    background-color: rgba(121, 200, 199, 1);
+    padding: 20px;
 
-  img {
-    transform: rotate(45deg);
+    img {
+      transform: rotate(45deg);
+    }
   }
 }
-.icon img {
-  padding: 0 !important;
-  margin-right: 16px;
-  margin-left: 0 !important;
-  padding-top: 24px !important;
+.icon {
+  margin-left: 15px;
+  img {
+    padding: 0 !important;
+    margin-right: 16px;
+    margin-left: 0 !important;
+    padding-top: 24px !important;
+    display: none;
+  }
+}
+
+.text {
+  display: none;
 }
