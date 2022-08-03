@@ -1,45 +1,68 @@
-.container {
+body {
+  font-family: "Livvic", sans-serif;
   background-color: rgb(0, 64, 71);
-  margin-bottom: 100px;
 }
-.container .col-4 {
-  transition: 0.4s ease;
+
+.container {
+  padding: 0 165px 100px 165px !important;
+  background-color: rgb(0, 64, 71);
+  max-width: 1440px;
+  min-width: 1200px;
 }
-.container h1 {
+@media (max-width: 1200px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+.col-4 {
+  transition: 0.3s ease;
+}
+@media (max-width: 1200px) {
+  .col-4 {
+    -moz-columns: 6 !important;
+         columns: 6 !important;
+  }
+}
+
+h1 {
   text-align: center;
   color: #fff;
   font-size: 48px;
   line-height: 48px;
   margin-bottom: 64px;
 }
-.container .box {
-  padding: 35px 24px 28px;
+
+.box {
+  padding: 32px 24px 56px;
   background-color: rgb(1, 47, 52);
-  transition: 0.3s ease;
 }
-.container .box .box-1 {
-  padding: 0px 24px 28px 24px;
-}
-.container .box img {
-  margin-left: 110px;
+.box img {
+  margin: 0 103px;
   padding-bottom: 13px;
-  transition: 0.3s ease;
 }
-.container .box h3 {
+.box h3 {
   color: rgb(121, 200, 199);
   font-size: 18px;
   line-height: 28px;
   text-align: center;
   margin: 0;
 }
-.container .box p {
+.box p {
   color: #fff;
   font-size: 15px;
   line-height: 25px;
   text-align: center;
   margin: 0;
 }
-.container .plus {
+
+.plus {
+  margin-top: 28px;
   width: 56px;
   height: 56px;
   background-color: rgb(246, 126, 126);
@@ -48,7 +71,7 @@
   margin-top: -30px;
   transition: 0.3s ease;
 }
-.container .plus img {
+.plus img {
   transition: 0.3s ease;
 }
 
@@ -86,4 +109,5 @@
 
 .text {
   display: none;
+  padding: 0 24px;
 }/*# sourceMappingURL=main.css.map */

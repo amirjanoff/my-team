@@ -1,0 +1,14 @@
+.container {
+  padding: 0 165px 100px 165px !important;
+  background-color: rgba(0, 64, 71, 1);
+  max-width: $desktop-l;
+  min-width: $desktop;
+
+  @media (max-width: $desktop) {
+    max-width: $tablet;
+  }
+
+  @media (max-width: $tablet) {
+    max-width: 100%;
+  }
+}
