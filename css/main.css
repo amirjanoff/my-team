@@ -21,7 +21,8 @@ body {
 }
 
 .col-4 {
-  transition: 0.3s ease;
+  transition: 0.5s ease;
+  margin-bottom: 48px;
 }
 @media (max-width: 1200px) {
   .col-4 {
